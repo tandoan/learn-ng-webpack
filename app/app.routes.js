@@ -2,21 +2,21 @@
 
 var appModule = require('./index');
 
-appModule.config(function($routeProvider){
-    //$routeProvider.when('/landingPage',{templateUrl: 'components/landingPage.html'});
+appModule.config(function ($routeProvider) {
+
 
     $routeProvider.when('/', {
-        //templateUrl: './components/home/home.html',
-        //controller: 'homeController'
-        controller: 'landingPageController'
-
+        template: require('./components/home/home.html')
     });
 
-    $routeProvider.when('landingPage',{
-        //templateUrl: './components/landingPage/landingPage.html',
-        controller: 'landingPageController'
+    $routeProvider.when('home', {
+        template: require('./components/home/home.html')
     });
+
+    $routeProvider.when('landingPage', {
+        template: require('./components/landingPage/landingPage.html')
+    });
+
     /* Add New Routes Above */
-    $routeProvider.otherwise({redirectTo:'/home'});
-
+    $routeProvider.otherwise({redirectTo: '/home'});
 });

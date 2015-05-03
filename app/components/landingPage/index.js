@@ -6,6 +6,6 @@ module.exports = function($scope){
         'cats',
         'excited',
         'double excited'
-    ]
-    console.log($scope.allTheThings)
+    ];
+    console.log($scope.allTheThings, 'all the things!')
 };
