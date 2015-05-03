@@ -7,4 +7,5 @@ module.exports = function($scope){
         'excited',
         'double excited'
     ]
+    console.log($scope.allTheThings)
 };

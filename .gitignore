@@ -23,5 +23,5 @@ dist/
 test-results.xml
 .nebulatmp/
 *.log
-/src/main/spa/results/protractor/*.xml
 *results.xml
+app/bundle.js
