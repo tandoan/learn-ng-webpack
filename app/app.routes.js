@@ -9,11 +9,12 @@ appModule.config(function ($routeProvider) {
         template: require('./components/home/home.html')
     });
 
-    $routeProvider.when('home', {
-        template: require('./components/home/home.html')
+    $routeProvider.when('/home', {
+        template: require('./components/home/home.html'),
+        controller: require('./components/home/')
     });
 
-    $routeProvider.when('landingPage', {
+    $routeProvider.when('/landingPage', {
         template: require('./components/landingPage/landingPage.html')
     });
 
